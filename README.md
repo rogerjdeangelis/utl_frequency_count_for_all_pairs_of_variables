@@ -3,6 +3,7 @@ Frequency counts for all pairs of variables. Keywords: sas sql join merge big da
     Frequency counts for all pairs of variables
 
    See Data_null_ better solution below
+   by datanull@gmail.com
 
     github
     https://github.com/rogerjdeangelis/utl_frequency_count_for_all_pairs_of_variables
@@ -54,7 +55,7 @@ Frequency counts for all pairs of variables. Keywords: sas sql join merge big da
         run;quit;
         
         SAS-L Data_null_ better solution;
-        
+        by datanull@gmail.com
         proc summary data=sashelp.iris chartype;
             class _all_ / mlf;
             ways 2;
