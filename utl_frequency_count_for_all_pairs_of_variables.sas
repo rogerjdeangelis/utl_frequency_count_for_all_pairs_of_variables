@@ -1,5 +1,7 @@
 Frequency counts for all pairs of variables
 
+see the improved data_null_ solution in the process section
+
 github
 https://github.com/rogerjdeangelis/utl_frequency_count_for_all_pairs_of_variables
 
@@ -80,6 +82,11 @@ PROCESS
     tables &crx. / list;
    run;quit;
 
+   proc summary data=sashelp.iris chartype;
+      class _all_ / mlf;
+       ways 2;
+       output out=_2way;  
+   run;
 
 OUTPUT
 ======
