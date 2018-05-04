@@ -50,7 +50,14 @@ Frequency counts for all pairs of variables. Keywords: sas sql join merge big da
             PETALWIDTH  * SEPALLENGTH
             PETALWIDTH  * SEPALWIDTH   / list;
         run;quit;
-
+        
+        SAS-L Data_null_ better solution;
+        
+        proc summary data=sashelp.iris chartype;
+            class _all_ / mlf;
+            ways 2;
+            output out=_2way;  
+         run;
 
     PROCESS
     =======
